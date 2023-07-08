@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" connect="width=device-width, initial-scale=1.0">
+	<title>Знакомство с HTML тегами [Формы] </title>
+	<link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+	<form action="#" method="get">
+		<div class="pin">
+			<p>Имя</p>
+			<input placeholder="имя" tabindex="1" name="username" type="text" />
+		</div>
+		<div class="pin">
+			<p>Пароль</p>
+			<input placeholder="пароль" tabindex="2" name="userpass" type="password" />
+		</div>
+		<div class="pin">
+			<p>Телефон</p>
+			<input placeholder="телефон" tabindex="3" name="userphone" type="tel" />
+		</div>		
+		<div class="pin">
+			<p>Пол</p>
+			<div class="bpin">
+				<input tabindex="4" checked type="radio" name="gender" value="male" /> мужской
+			</div> 
+			<div class="bpin">
+				<input tabindex="4" type="radio" name="gender" value="female" /> женский
+			</div>			
+		</div>		
+		<div class="pin">
+			<p>Имущество</p>
+			<div class="bpin">
+				<input tabindex="5" checked type="checkbox" name="bike" value="yes" /> велик
+			</div>	
+			<div class="bpin">
+				<input tabindex="6" type="checkbox" name="car" value="yes" /> машина
+			</div>	
+			<div class="bpin">
+				<input tabindex="7" disabled type="checkbox" name="house" value="yes" /> дом
+			</div>				
+		</div>	
+		<div class="pin">
+			<p>Дополнительная информация</p>
+			<textarea class="bpin" tabindex="8" name="text"></textarea>
+		</div>	
+		<div class="pin">
+			<p>Любимый цвет</p>
+			<select class="bpin" tabindex="9" name="color">
+				<option value="red">красный</option>
+				<option selected value="green">зеленый</option>
+				<option value="yellow">желтый</option>
+			</select>
+		</div>	
+		<div class="pin">
+			<p>Действие</p>
+			<button tabindex="10" type="submit">Отправить</button>
+			<button tabindex="11" type="reset">Очистить</button>
+		</div>
+	</form>
+</body>
+</html>
